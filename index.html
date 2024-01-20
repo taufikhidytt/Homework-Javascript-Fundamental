@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Fundamental Javascript">
+    <meta name="keywords" content="HTML, Javascript">
+    <meta name="author" content="Taufik Hidayat">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taufik Hidayat | Homework - Javascript Fundamental</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="mb-5 text-center">Homework - Javascript Fudamental</h1>
+        <div class="col-lg-6 offset-lg-3 col-md-12 col-sm-12 mb-3">
+            <ol>
+                <li>
+                    <p>Cek Suhu Anda :</p>
+                    <input type="number" id="suhu" name="suhu" class="form-control mb-3" placeholder="Masukan Suhu Anda">
+                    <button type="button" name="cetak" id="cetak" class="btn btn-primary btn-sm" onclick="suhu()">Cek Suhu</button>
+                    <button type="button" name="clearSuhu" id="clearSuhu" class="btn btn-secondary btn-sm" onclick="clearSuhu()">Clear</button>
+                    <h4 id="hasil" class="mt-3"></span>
+                </li>
+                <li>
+                    <p>Cek Jenis BBM :</p>
+                    <select name="jenisKendaraan" id="jenisKendaraan" class="form-control" onchange="jenisKendaraan(this)">
+                        <option value="">--Select Jenis Kendaraan Anda--</option>
+                        <option value="plat kuning">Plat Kuning</option>
+                        <option value="motor">Motor</option>
+                        <option value="mobil">Mobil</option>
+                    </select><br>
+
+                    <input type="number" id="nilai" name="nilai" class="form-control mb-3" placeholder="Masukan CC Kendaraan Anda" readonly>
+
+                    <button type="button" name="jenisBbm" id="jenisBbm" class="btn btn-primary btn-sm" onclick="jenisBbm()">Cek Jenis BBM</button>
+                    <button type="button" name="clearBBM" id="clearBBM" class="btn btn-secondary btn-sm" onclick="clearBBM()">Clear</button>
+                    <h4 id="hasilBbm" class="mt-3"></span>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
