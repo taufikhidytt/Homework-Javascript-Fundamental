@@ -1,3 +1,6 @@
+// author 
+// Taufik Hidayat | Bootcamp Rakamin
+
 function suhu() {
     let suhu = document.getElementById("suhu").value ;
 
@@ -53,3 +56,6 @@ function clearBBM()
 
     document.getElementById("hasilBbm").innerHTML = '';
 }
+
+// author 
+// Taufik Hidayat | Bootcamp Rakamin
